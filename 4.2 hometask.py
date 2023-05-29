@@ -10,7 +10,7 @@
 n = int(input("Введите кол-во кустов: "))
 berries = [int(input("Введите кол-во ягод на кусте: ")) for i in range(n)]
 max_berries = 0
-for i in range(len(berries)):
-    if berries[i-2] + berries[i-1] + berries[i] > max_berries:
-        max_berries = berries[i-2] + berries[i-1] + berries[i]
+for i in berries:
+    if (i-2) + (i-1) + i > max_berries:
+        max_berries = (i-2) + (i-1) + i
 print(max_berries)
